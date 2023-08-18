@@ -1,0 +1,299 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ /***************************************************NAVBAR*************************************/
+
+
+  
+  
+
+
+
+  
+  
+@media (max-width: 767px) {
+    .service img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+   
+   .carousel-inner img {
+    width: 100%;
+    height: 95vh;
+  }
+
+
+@media (max-width: 767px) {
+    .carousel-inner img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  
+
+.gallery-item img {
+    height: 300px; 
+    width: 100%;   
+    object-fit: cover; 
+}
+
+
+.services-section .service img {
+    height: 400px; 
+    width: 100%;   
+    object-fit: cover; 
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.6);
+    
+}
+  
+.about-section {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    background-color: #f8f9fa; 
+  }
+  
+  
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; 
+  }
+  
+  .gallery-item img {
+    transition: transform 0.3s;
+    
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+  
+
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  
+  .contact-form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  
+  .my-group label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px; 
+  }
+  
+  
+
+  .form-control {
+    border: 1px solid #dddddd;
+    margin-bottom: 15px; 
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .btn-primary {
+    background-color: orangered;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.6);
+  }
+  
+  .btn-primary:hover {
+    background-color: orange;
+  }
+  
+  
+  .contact-section b {
+    display: block;
+    margin-bottom: 23px; 
+    font-size: 15px; 
+  }
+
+
+  .about-section b {
+    display: block;
+    margin-bottom: 23px;
+    font-size: 15px; 
+  }
+  
+  .services-section b {
+    display: block;
+    margin-bottom: 23px; 
+    font-size: 15px; 
+  }
+ 
+  
+  .gallery-section b {
+    display: block;
+    margin-bottom: 23px; 
+    font-size: 15px; 
+  }
+
+  .img-fluid {   
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.6);
+  }
+  
+
+  link[rel="icon"] {
+    width: 12px;
+    height: 12px;
+}
+
+.footer {
+    background-color: #FFA500; 
+    padding: 20px;
+    text-align: center;
+    color: white; 
+  }
+
+ 
+  .copyright {
+    margin-top: 10px;
+  }
+
+  /* Style for the link */
+  .designer-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Style for the italic text */
+  .italic {
+    font-style: italic;
+  }
+  
+/* Style for Services Section */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  .services-section h2 {
+    color: #333;
+  }
+  
+  .service {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: wheat;
+    transition: transform 0.2s;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    color: #007bff;
+  }
+  
+  .service p {
+    color: #666;
+  }
+  
+  
+
+
+
+
+
+
+  /* Navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: orange; /* Initial background color */
+  z-index: 1000;
+  font-weight: bold;
+}
+
+/* Active and hover effects */
+.navbar-dark .navbar-nav .nav-link {
+ 
+  
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: red; /* Change to your desired active/hover text color */
+}
+
+/* Smaller logo size */
+.navbar-brand img {
+  max-height: 40px; /* Adjust the size as needed */
+ 
+}
+
+/* Navbar color change after scrolling */
+.navbar-scrolled {
+  background-color: #222; /* Change to your desired scrolled background color */
+}
+
+/* Move navigation items to the right */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Add distance between logo and "Blossom" name */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Vertically align the logo and text */
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Adjust the size as needed */
+  margin-right: 10px; /* Add margin between logo and text */
+}
+
+.navbar-brand b {
+  margin: 0; /* Reset margin to eliminate default spacing */
+}
+
+/* Add spacing between specific nav items */
+.navbar-dark .navbar-nav .nav-item:not(:last-child) {
+  margin-right: 15px; /* Adjust the spacing as needed */
+}
